@@ -1,7 +1,7 @@
 module.exports = {
   name: 'Getting Started',
   intro: `
-It's not a secret that creating client-side JavaScript is pretty difficult these days. We normally refer to it as JavaScript Fatigue. Fortunately, there are some projects which simplify things and help you build apps faster.
+It's not a secret that creating client-side JavaScript is pretty difficult these days. Fortunately, there are some projects which simplify things and help you build apps faster.
 
 [Create React App](https://github.com/facebookincubator/create-react-app) is a very good example of that.
 
@@ -10,6 +10,8 @@ But still, there's a big learning curve before you can build a proper app. That'
 **So, we need something simple.**
 
 Just think about how we created webapps with PHP in the early days. We just created some pages and wrote PHP code. Then, we simply deployed it. We didn't need to worry about routing much and the app was server rendered by default.
+
+<img width="112" alt="Next.js Logo" src="https://cloud.githubusercontent.com/assets/50838/24116055/7076ba9c-0dcb-11e7-93d0-ba8f9ac8f6e4.png">
 
 That's exactly what we are doing with [Next.js](https://github.com/zeit/next.js). Instead of  PHP, you create the app with JavaScript and React. Here are some other cool features Next.js brings to the table:
 
@@ -153,6 +155,8 @@ What'll happen to the app loaded at [http://localhost:3000](http://localhost:300
       type: 'text',
       points: 5,
       text: `
+## Handling Errors
+
 By default, Next.js will track errors like these and show it on the browser. That'll help you to identify errors and fix them quickly.
 
 Once you simply fix the issue, the page will appear instantly without a full page reload. We do it with the help of Webpack's [hot code replacement](https://webpack.js.org/concepts/hot-module-replacement/) facility. We support it by default.
@@ -164,6 +168,8 @@ Once you simply fix the issue, the page will appear instantly without a full pag
       type: 'text',
       points: 5,
       text: `
+## You are Awesome
+
 Seems like you've built your first Next.js  app. What do you think?
 If you like it, let's dive deeper.
 
