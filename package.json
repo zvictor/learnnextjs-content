@@ -1,0 +1,24 @@
+{
+  "name": "learnnextjs-content",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "coursebook-publish http://localhost:3003 admin content",
+    "start": "coursebook-publish https://server.learnnextjs.com $ADMIN_TOKEN content"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arunoda/learnnextjs-content.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arunoda/learnnextjs-content/issues"
+  },
+  "homepage": "https://github.com/arunoda/learnnextjs-content#readme",
+  "dependencies": {
+    "coursebook-publish": "^1.0.0"
+  }
+}
