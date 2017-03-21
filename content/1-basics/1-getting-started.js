@@ -5,23 +5,24 @@ It's not a secret that creating client-side JavaScript is pretty difficult these
 
 [Create React App](https://github.com/facebookincubator/create-react-app) is a very good example of that.
 
-But still, there's a big learning curve before you can build a proper app. That's because you need to learn about routing, state management etc. If you need to do server side rendering for faster page loads, things will get pretty difficult.
+But still, there's a high learning curve before you can build a proper app. That's because you need to learn about routing, page layout and etc. If you need to do server side rendering for faster page loads, things will get pretty difficult.
 
-**So, we need something simple.**
+**So, we need something simple but customizable.**
 
-Just think about how we created webapps with PHP in the early days. We just created some pages and wrote PHP code. Then, we simply deployed it. We didn't need to worry about routing much and the app was server rendered by default.
+Just think about how we created webapps with PHP in the early days. We just created some pages and wrote PHP code. Then, we simply deployed it. We didn't had to worry about routing much and the app was server rendered by default.
 
 <img width="112" alt="Next.js Logo" src="https://cloud.githubusercontent.com/assets/50838/24116055/7076ba9c-0dcb-11e7-93d0-ba8f9ac8f6e4.png">
 
-That's exactly what we are doing with [Next.js](https://github.com/zeit/next.js). Instead of  PHP, you create the app with JavaScript and React. Here are some other cool features Next.js brings to the table:
+That's exactly what we are doing with [Next.js](https://github.com/zeit/next.js). Instead of  PHP, we build the app with JavaScript and React. Here are some other cool features Next.js brings to the table:
 
   * Server Rendered by default.
   * Automatic Code Splitting for faster page loads
   * Simple Client Side Routing (page based)
-  * Hot code reloading dev environment
-  * Embed with Express or any other Node.js HTTP Server
-  * Customize with Custom Babel and Webpack configurations
+  * Webpack based dev environment which supports [Hot Module Replacement](https://webpack.js.org/concepts/hot-module-replacement/) (HMR)
+  * Embed with Express or any other Node.js HTTP server
+  * Customize with your own Babel and Webpack configurations
 
+Sounds great right?
 Let's give it a try.
   `,
 
@@ -133,8 +134,7 @@ Here, we've exported a simple React Component from the "index.js" module. Likewi
 
 
 Now try to make a syntax error in our Index page. Here's an example:
-(We have simply removed the "
-" HTML tag)
+(We have simply removed the **&#x3C;/p&#x3E;** HTML tag)
 
 ~~~js
 const Index = () => (
