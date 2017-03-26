@@ -32,7 +32,7 @@ Let's see how to use it.
 
 In order to follow this lesson, you need to have a simple Next.js app. For that, download the following example app:
 
-~~~js
+~~~bash
 git clone https://github.com/arunoda/learnnextjs-demo.git
 cd learnnextjs-demo
 git checkout getting-started
@@ -40,7 +40,7 @@ git checkout getting-started
 
 You can run it with:
 
-~~~js
+~~~bash
 npm install
 npm run dev
 ~~~
