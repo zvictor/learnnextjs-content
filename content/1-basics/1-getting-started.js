@@ -57,7 +57,7 @@ First of all, create a sample project by running the following commands:
 mkdir hello-next
 cd hello-next
 npm init -y
-npm install --save react react-dom
+npm install --save react react-dom next
 mkdir pages
 ~~~
 
