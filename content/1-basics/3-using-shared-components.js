@@ -109,7 +109,12 @@ At this point, if you navigate to your app at http://localhost:3000  you'll be a
 
 ---
 
-Let's try to make a simple modification to our component. Try renaming the \`components\` directory to \`comps\`. Then import the Header from \`../comps/Header\` instead of \`../components/Header\`.
+Let's try to make some simple modifications to app.
+
+* Stop the running app.
+* Rename the \`components\` directory to \`comps\`.
+* Then import the Header from \`../comps/Header\` instead of \`../components/Header\`.
+* Start the app again.
 
 Will it work?
       `
