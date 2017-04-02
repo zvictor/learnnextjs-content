@@ -1,13 +1,13 @@
 module.exports = {
   name: 'Using Shared Components',
   intro: `
-We know that Next.js is all about pages. We can create a page by exporting a React component and putting that component inside the \`pages\` directory. Then it will then have a fixed URL based on the file name.
+We know that Next.js is all about pages. We can create a page by exporting a React component, and putting that component inside the \`pages\` directory. Then it will have a fixed URL based on the file name.
 
-And since exported pages are JavaScript modules, we can import other JavaScript components into them as well.
+Since exported pages are JavaScript modules, we can import other JavaScript components into them as well.
 
 > This is a feature you'd expect from any JavaScript framework.
 
-In this lesson, we'll create a common Header component and use it in multiple pages. Finally, we'll look at a Layout component and see how it can help us.
+In this lesson, we'll create a common Header component and use it in multiple pages. Finally, we'll look at implementing a Layout component and see how it can help us define the look for multiple pages.
 
 Let's get started.
   `,
@@ -102,18 +102,18 @@ export default () => (
 
 You can do the same for the  about.js page as well.
 
-At this point, if you navigate to your app at http://localhost:3000  you'll be able to see the new Header and navigate between pages.
+At this point, if you navigate to your app at http://localhost:3000/  you'll be able to see the new Header and navigate between pages.
 
 ![](https://cloud.githubusercontent.com/assets/50838/24333679/fa856f00-1279-11e7-931d-a5707e51a801.gif)
 
 
 ---
 
-Let's try to make some simple modifications to app.
+Let's try to make some simple modifications to our application.
 
 * Stop the running app.
 * Rename the \`components\` directory to \`comps\`.
-* Then import the Header from \`../comps/Header\` instead of \`../components/Header\`.
+* Import the Header from \`../comps/Header\` instead of \`../components/Header\`.
 * Start the app again.
 
 Will it work?
@@ -133,7 +133,7 @@ We don't need to put our components in a special directory; the directory can be
 
 You can even create the Component inside the \`pages\` directory.
 
-Here we didn't do that because we didn't need a direct URL for our Header component.
+Here we didn't do that because we don't need a direct URL to our Header component.
       `
     },
 
@@ -151,7 +151,7 @@ Here we didn't do that because we didn't need a direct URL for our Header compon
       text: `
 ## The Layout Component
 
-In our app, we'll use a common style across various pages. For this purpose, we can create a common Layout component and use it inside our pages. Here's an example:
+In our app, we'll use a common style across various pages. For this purpose, we can create a common Layout component and use it for each of our pages. Here's an example:
 
 Add this content to \`components/MyLayout.js\`:
 
@@ -200,7 +200,7 @@ export default () => (
 )
 ~~~
 
-Remember, you can access the app at http://localhost:3000 to see what it looks like.
+Remember, you can access the app at http://localhost:3000/ to see what it looks like.
 
 Now let's try removing \`{props.children}\` from the Layout and see what happens to the app.
 
@@ -213,7 +213,7 @@ What will happen to the app?
       type: 'text',
       points: 5,
       text: `
-## Rendering Children Component
+## Rendering Child Components
 
 If you remove \`{props.children}\`, the Layout cannot render the content we put inside the \`Layout\` element, as shown below:
 
@@ -225,7 +225,7 @@ export default () => (
 )
 ~~~
 
-This is just a one way to create a Layout component. Here are some other ideas for creating a Layout component:
+This is just a one way to create a Layout component. Here are some other methods of creating a Layout component:
 
 ~~~js
 import withLayout from '../lib/layout'
@@ -258,7 +258,7 @@ export default () => (<Layout content={content}/>)
       type: 'text',
       points: 5,
       text: `
-## Use Components
+## Using Components
 
 We've mentioned two use cases for shared components:
 

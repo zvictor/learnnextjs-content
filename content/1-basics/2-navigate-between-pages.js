@@ -1,7 +1,7 @@
 module.exports = {
   name: 'Navigate Between Pages',
   intro: `
-Now we know how to create a simple Next.js app and run it. Our simple app only had a single page, but we can add as many pages as we need. For example, we can create the "about page" by adding the following content to \`pages/about.js\`:
+Now we know how to create a simple Next.js app and run it. Our simple app only had a single page, but we can add as many pages as we want. For example, we can create an "About" page by adding the following content to \`pages/about.js\`:
 
 ~~~js
 export default () => (
@@ -13,11 +13,9 @@ export default () => (
 
 Then we can access that page with http://localhost:3000/about.
 
-After that, we need to connect these pages. We could use an HTML "a" tag for that. However, it doesn't do client-side navigations. It navigates to the page via the server.
+After that, we need to connect these pages. We could use an HTML "a" tag for that. However, it won't perform client-side navigation; it navigates to the page via the server, which is not what we want.
 
-That's not what we needed.
-
-In order to support client-side navigations, we need to use Next.js's Link API which is exported via \`next/link\`.
+In order to support client-side navigation, we need to use Next.js's Link API, which is exported via \`next/link\`.
 
 Let's see how to use it.
   `,
@@ -30,7 +28,7 @@ Let's see how to use it.
       text: `
 ## Setup
 
-In order to follow this lesson, you need to have a simple Next.js app. For that, download the following example app:
+In order to follow along with this lesson, you need to have a simple Next.js app. For that, download the following example app:
 
 ~~~bash
 git clone https://github.com/arunoda/learnnextjs-demo.git
@@ -65,7 +63,7 @@ Now you can access the app by navigating to http://localhost:3000/.
 
 Now we are going to use \`next/link\` to link our two pages.
 
-Add the following code into the \`pages/index.js\`
+Add the following code into \`pages/index.js\`
 
 ~~~js
 // This is the Link API
@@ -93,18 +91,19 @@ Here we've imported \`next/link\` as \`Link\` and use it like this:
 
 Now try to visit http://localhost:3000/
 
-Then click the "About Page" link. It'll navigate you to the about page.
+Then click the "About Page" link. It will navigate you to the "About" page.
 
-> This is a client-side navigation. You can check it by opening your browser's network request inspector.
+> This is client-side navigation; the action takes place in the browser, without making a request to the server.
+> You can verify this by opening your browser's network request inspector.
 
 
 Okay, now we have a simple task for you:
 
 * Visit http://localhost:3000/
 * Then click the "About Page"
-* Then hit the browser back button
+* Then hit your browser's Back button
 
-How do you describe the experience of the back button?
+How would you best describe the experience of the Back button?
       `
     },
 
@@ -113,9 +112,9 @@ How do you describe the experience of the back button?
       points: 5,
       type: 'text',
       text: `
-## Client Side History Support
+## Client-Side History Support
 
-When you hit the back button, it navigates the page to the index page via the client side; \`next/link\` does all the [\`location.history\`](https://developer.mozilla.org/en-US/docs/Web/API/History_API) configurations for you.
+When you hit the Back button, it navigates the page to the index page entirely via the client; \`next/link\` does all the [\`location.history\`](https://developer.mozilla.org/en-US/docs/Web/API/History_API) handling for you.
 
 You don't need to write even a single line of client-side routing code.
 
@@ -137,7 +136,7 @@ Simply link pages; it just works!
     text: `
 ## Styling a Link
 
-Most of the time, we may need to style our links. This is how we can do it:
+Most of the time, we may want to style our links. This is how we can do it:
 
 ~~~js
 <Link href="/about">
@@ -145,7 +144,7 @@ Most of the time, we may need to style our links. This is how we can do it:
 </Link>
 ~~~
 
-Once we added this, you can see the style applied correctly.
+Once we add this, you can see the style applied correctly.
 
 How about doing this instead?
 
@@ -164,7 +163,7 @@ What has happened with the above code change?
     type: 'text',
     points: 5,
     text: `
-## Link is just a Higher Order Component (HOC)
+## Link is Just a Higher Order Component (HOC)
 
 Actually, the style prop on \`next/link\` has no effect. That's because \`next/link\` is just a [higher order component](https://facebook.github.io/react/docs/higher-order-components.html) which only accepts the "href" and some similar props. If you need to style it, you need to do it to the underlying component.
 
@@ -184,7 +183,7 @@ In this case, it's our anchor.
     ],
     correctAnswer: 'It navigates the page to the about page.',
     text: `
-## Link with a Button
+## Link With a Button
 
 Let's say that we need to use a "button" instead of an anchor for our link. Then we need to edit our navigation code like this:
 
@@ -203,11 +202,11 @@ What will happen when you click the button on the index page?
     points: 5,
     type: 'text',
     text: `
-## Link works with Anything
+## Link Works With Anything
 
-Just like a button, you can place any of your custom React components or even a \`div\`.
+Just like a button, you can place any of your custom React components or even a \`div\` within a Link.
 
-The component should accept an \`onClick\` prop. That's the only requirement to use inside \`next/link\`.
+The only requirement for components placed inside a Link is they should accept an \`onClick\` prop.
     `
   },
 
