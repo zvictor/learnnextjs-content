@@ -173,6 +173,8 @@ server.get('/p/:id', (req, res) => {
 })
 ~~~
 
+Then restart your app to apply the above code change.
+
 > Earlier, we mapped the \`title\` query param to the page. Now we need to rename it to \`id\`.
 
 Now replace the \`pages/post.js\` with the following content:
