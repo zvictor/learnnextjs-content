@@ -129,7 +129,7 @@ As you can see in the above \`getInitialProps\` function, it prints the number o
 Now, have a look at both the browser console and server console.
 Then reload the page.
 
-In what places have you seen the above message printed?
+Where did you see the above message printed _after_ page reload?
       `
     },
 
