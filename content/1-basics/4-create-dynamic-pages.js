@@ -11,7 +11,7 @@ We'll be creating a simple blog app. It has a list of all the posts on the home 
 
 ![](https://cloud.githubusercontent.com/assets/50838/24542722/600b9ce8-161a-11e7-9f1d-7ed08ff394fd.png)
 
-When you click on a post title, you'll be able to see the individual post on a it's own view.
+When you click on a post title, you'll be able to see the individual post on its own view.
 
 ![](https://cloud.githubusercontent.com/assets/50838/24542721/5fdd9c26-161a-11e7-9b10-296d4cb6912d.png)
 
