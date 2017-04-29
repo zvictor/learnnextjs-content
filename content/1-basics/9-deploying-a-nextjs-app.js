@@ -7,7 +7,7 @@ Have you ever come across this question?
 
 We haven't talked about that yet, but it's pretty simple and straightforward.
 
-You can deploy a Next.js app into anywhere you can run Node.js. So, there's not any kind of lock-in, even though deploying into [ZEIT's now](https://zeit.co/now) is super simple.
+You can deploy a Next.js app into anywhere you can run Node.js. So, there's not any kind of lock-in, even though deploying into [▲ZEIT now](https://zeit.co/now) is super simple.
 
 Let's learn about deploying Next.js apps.
   `,
@@ -136,11 +136,11 @@ As you can see, you need to build your app once. Then you can start it on as man
       ],
       correctAnswer: '80 (or without a port mentioned)',
       text: `
-## Deploying to ZEIT's now
+## Deploying to ▲ZEIT now
 
 Now we know how to build and start a Next.js app. We did everything with npm scripts. So, you will be able to customize it to work with your favorite deployment service.
 
-But if you use [ZEIT's now](https://zeit.co/now), there only a single step.
+But if you use [▲ZEIT now](https://zeit.co/now), there only a single step.
 
 Just add the following npm scripts:
 
@@ -174,7 +174,7 @@ So, in which port could we access our app when deployed to ZEIT now?
 
 Actually, even if you start your app on port 8000, once deployed to now, you can access it with port 80 (or without a port).
 
-That's a feature of ZEIT's now. You only need to start your app on any port you like. ZEIT's now will map it to port 80 always.
+That's a feature of ▲ZEIT now. You only need to start your app on any port you like. ▲ZEIT now will map it to port 80 always.
       `
     },
 
@@ -185,7 +185,7 @@ That's a feature of ZEIT's now. You only need to start your app on any port you 
       text: `
 ## Build Your App Locally
 
-ZEIT's now will detect the “npm build” script and build it for you when you deploy.
+▲ZEIT now will detect the “npm build” script and build it for you when you deploy.
 
 Some hosting providers do not have something like that. In that case, you can build your app locally with:
 
