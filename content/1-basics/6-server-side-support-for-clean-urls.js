@@ -119,7 +119,7 @@ What's the you experience you will get?
       text: `
 ## Create our Custom Route
 
-As you've experienced, the app will work just like it did previously because the the custom server we wrote is similar to the “next” binary command.
+As you've experienced, the app will work just like it did previously because the custom server we wrote is similar to the “next” binary command.
 
 Now we are going to add a custom route to match our blog post URLs. 
 
