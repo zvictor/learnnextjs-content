@@ -62,7 +62,7 @@ For that, add the following npm script:
 }
 ~~~
 
-That will start our app in port 8000.
+That will start our app in port 3000.
 
 So, you can run the following commands to run our app in production:
 
