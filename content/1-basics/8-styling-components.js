@@ -120,7 +120,7 @@ After you have replaced this code, our blog's home page will look like this:
 
 ![](https://cloud.githubusercontent.com/assets/50838/25552915/f18f2f12-2c5a-11e7-97aa-4b9d4b9f95a7.png)
 
-In the above code, we did  not write styles directly inside of the style tag; rather, we it was written inside of a template string.
+In the above code, we did  not write styles directly inside of the style tag; rather, it was written inside of a template string.
 
 Now try to write CSS directly without a template string (\`{\`\`}\`). Like this:
 
