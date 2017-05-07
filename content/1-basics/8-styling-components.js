@@ -8,7 +8,7 @@ For a React app, there are many different techniques that we can use to style it
 1. Traditional CSS-file-based styling (including SASS, PostCSS etc)
 2. [CSS in Js](https://github.com/MicheleBertoli/css-in-js) styling
 
-Consequently, there are a bunch of practical issues to consider with traditional CCS-file-based styling (especially with SSR), so we suggest avoiding this method when styling for Next.js.
+Consequently, there are a bunch of practical issues to consider with traditional CSS-file-based styling (especially with SSR), so we suggest avoiding this method when styling for Next.js.
 
 Instead we recommend CSS in JS, which you can use to style individual components rather than importing CSS files.
 
