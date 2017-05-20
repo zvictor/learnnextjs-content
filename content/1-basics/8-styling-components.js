@@ -307,7 +307,7 @@ const PostLink = ({ post }) => (
 
 Sometimes, we do need to change styles inside of a child component. This is especially true when using markdown with React. You can see that on our post page. (\`pages/post.js\`)
 
-This is where global styles come in handy. Now try to add some global style rules with styled-jsx. Apply the following content to pages/post.js.
+This is where global styles come in handy. Now try to add some global style rules with styled-jsx. Apply the following content to \`pages/post.js\`.
 
 ~~~js
 import Layout from '../components/MyLayout.js'
@@ -318,7 +318,7 @@ export default (props) => (
    <h1>{props.url.query.title}</h1>
    <div className="markdown">
      <Markdown content={\`
-This is out blog post.
+This is our blog post.
 Yes. We can have a [link](/link).
 And we can have a title as well.
 
