@@ -210,7 +210,7 @@ server.get('/p/:id', (req, res) => {
 })
 ~~~
 
-This is a problem. But in the world, this won't be much of an issue because we'll use an ID to fetch data from a data server in both client and the server.
+This is a problem. But in the real world, this won't be much of an issue because we'll use an ID to fetch data from a data server in both client and the server.
 
 So, we only need an ID.
       `
