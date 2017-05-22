@@ -7,7 +7,9 @@ In practice, we usually need to fetch data from a remote data source. Next.js co
 
 With that, we can fetch data for a given page via a remote data source and pass it as props to our page. We can write our \`getInitialProps\` to work on both server and the client. So, Next.js can use it on both client and server.
 
-In this lesson, using \`getInitialProps\`, we are going to build an app which shows information about Batman TV Shows, utilising the Public TVmaze API.
+In this lesson, using \`getInitialProps\`, we are going to build an app which shows information about Batman TV Shows, utilising the public [TVmaze API](http://www.tvmaze.com/api).
+
+![](https://cloud.githubusercontent.com/assets/50838/26300776/bbf275ee-3efc-11e7-8304-df96c7c7cad5.png)
 
 Let's get started.
   `,
@@ -119,8 +121,7 @@ That's a static async function you can add into any page in your app. Using that
 
 As you can see, now we are fetching Batman TV shows and passing them into our page as the 'shows' prop.
 
-One thing to note, the TVMaze API returns an array of 'shows', with the 'show' property. 
-We have destructured each show from the passed 'props' to reduce the need for 'show.show.id' references etc..
+![](https://cloud.githubusercontent.com/assets/50838/26300128/de007dd6-3efa-11e7-9084-6ba7ff10774b.png)
 
 ---
 
@@ -185,7 +186,7 @@ import fetch from 'isomorphic-unfetch'
 const Post =  (props) => (
     <Layout>
        <h1>{props.show.name}</h1>
-       <p>{props.show.summary}</p>
+       <p>{props.show.summary.replace(/<[\/]?p>/g, '')}</p>
        <img src={props.show.image.medium}/>
     </Layout>
 )
@@ -203,16 +204,12 @@ Post.getInitialProps = async function (context) {
 export default Post
 ~~~
 
-You may note that the 'props.show.summary' field returns a string of HTML. For the purposes of this particular tutorial, we are rendering it whole. 
-
-If you so wish, you may write this HTML directly into the page, utilising React's [dangerouslySetInnerHTML](https://facebook.github.io/react/docs/dom-elements.html#dangerouslysetinnerhtml) - however, please proceed with caution.
-
 Have a look at the getInitialProps of that page:
 
 ~~~js
 Post.getInitialProps = async function (context) {
   const { id } = context.query
-  const res = await fetch(\`http://api.tvmaze.com/shows/${id}\`)
+  const res = await fetch(\`http://api.tvmaze.com/shows/\${id}\`)
   const show = await res.json()
 
   console.log(\`Fetched show: \${show.Title}\`)
