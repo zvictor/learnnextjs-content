@@ -140,7 +140,7 @@ As you can see, you need to build your app once. Then you can start it on as man
 
 Now we know how to build and start a Next.js app. We did everything with npm scripts. So, you will be able to customize it to work with your favorite deployment service.
 
-But if you use [▲ZEIT now](https://zeit.co/now), there only a single step.
+But if you use [▲ZEIT now](https://zeit.co/now), there is only a single step.
 
 Just add the following npm scripts:
 
