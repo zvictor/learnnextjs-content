@@ -96,7 +96,7 @@ First of all, do the following changes to our start npm script:
 }
 ~~~
 
-> If you are on Windows, your start script should be `next start -p %PORT%`.
+> If you are on Windows, your start script should be \`next start -p %PORT%\`.
 
 Now let's build our app first.
 
@@ -111,7 +111,7 @@ PORT=8000 npm start
 PORT=9000 npm start
 ~~~
 
-> On Windows, you will need to run the command differently. One option is to install the npm module [`cross-env`](https://www.npmjs.com/package/cross-env) into your app. Then run `cross-env PORT=9000 npm start` from the command line.
+> On Windows, you will need to run the command differently. One option is to install the npm module [\`cross-env\`](https://www.npmjs.com/package/cross-env) into your app. Then run \`cross-env PORT=9000 npm start\` from the command line.
 
 Is it possible to access our app on both ports?
       `
