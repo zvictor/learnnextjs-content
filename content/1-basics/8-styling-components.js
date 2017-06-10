@@ -31,7 +31,7 @@ In order to follow this lesson, you will need to have a simple Next.js app. For 
 ~~~bash
 git clone https://github.com/arunoda/learnnextjs-demo.git
 cd learnnextjs-demo
-git checkout clean-urls-ssr-markdown
+git checkout clean-urls-ssr
 ~~~
 
 You can run it with:
@@ -309,15 +309,17 @@ Sometimes, we do need to change styles inside of a child component. This is espe
 
 This is where global styles come in handy. Now try to add some global style rules with styled-jsx. Apply the following content to \`pages/post.js\`.
 
+> Before you apply the following content, install [react-markdown](https://github.com/rexxars/react-markdown) component into your app with: \`npm install --save react-markdown\`
+
 ~~~js
 import Layout from '../components/MyLayout.js'
-import Markdown from '../components/Markdown'
+import Markdown from 'react-markdown'
 
 export default (props) => (
   <Layout>
    <h1>{props.url.query.title}</h1>
    <div className="markdown">
-     <Markdown content={\`
+     <Markdown source={\`
 This is our blog post.
 Yes. We can have a [link](/link).
 And we can have a title as well.
