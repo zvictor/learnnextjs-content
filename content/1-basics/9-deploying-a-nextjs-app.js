@@ -190,15 +190,16 @@ That's a feature of ▲ZEIT now. You only need to start your app on any port you
       text: `
 ## Build Your App Locally
 
-▲ZEIT now will detect the “npm build” script and build it for you when you deploy.
+▲ZEIT now will detect the \`npm build\` script and build it inside it's build infrastructure.
 
-Some hosting providers do not have something like that. In that case, you can build your app locally with:
+But, not every hosting providers have something like that.
+In that case, you can build your app locally with:
 
 ~~~bash
 npm run build
 ~~~
 
-Then deploy the app with the \`.next\` directory and only keep the start npm command in your \`package.json\`.
+Then deploy the app with the \`.next\` directory.
       `
     },
 
