@@ -89,7 +89,7 @@ const Index = (props) => (
 )
 
 Index.getInitialProps = async function() {
-  const res = await fetch('http://api.tvmaze.com/search/shows?q=batman')
+  const res = await fetch('https://api.tvmaze.com/search/shows?q=batman')
   const data = await res.json()
 
   console.log(\`Show data fetched. Count: \${data.length}\`)
@@ -106,7 +106,7 @@ Everything on the above page will be familiar to you except the \`Index.getIniti
 
 ~~~js
 Index.getInitialProps = async function() {
-  const res = await fetch('http://api.tvmaze.com/search/shows?q=batman')
+  const res = await fetch('https://api.tvmaze.com/search/shows?q=batman')
   const data = await res.json()
 
   console.log(\`Show data fetched. Count: \${data.length}\`)
@@ -193,7 +193,7 @@ const Post =  (props) => (
 
 Post.getInitialProps = async function (context) {
   const { id } = context.query
-  const res = await fetch(\`http://api.tvmaze.com/shows/\${id}\`)
+  const res = await fetch(\`https://api.tvmaze.com/shows/\${id}\`)
   const show = await res.json()
 
   console.log(\`Fetched show: \${show.name}\`)
@@ -209,7 +209,7 @@ Have a look at the getInitialProps of that page:
 ~~~js
 Post.getInitialProps = async function (context) {
   const { id } = context.query
-  const res = await fetch(\`http://api.tvmaze.com/shows/\${id}\`)
+  const res = await fetch(\`https://api.tvmaze.com/shows/\${id}\`)
   const show = await res.json()
 
   console.log(\`Fetched show: \${show.Title}\`)
