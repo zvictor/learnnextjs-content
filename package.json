@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "coursebook-publish http://localhost:3003 admin content",
-    "start": "coursebook-publish https://server.learnnextjs.com $ADMIN_TOKEN content"
+    "start": "cross-env coursebook-publish https://server.learnnextjs.com $ADMIN_TOKEN content"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/arunoda/learnnextjs-content#readme",
   "dependencies": {
-    "coursebook-publish": "^1.0.0"
+    "coursebook-publish": "^1.0.0",
+    "cross-env": "^5.0.1"
   }
 }
