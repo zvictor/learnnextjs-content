@@ -225,7 +225,7 @@ export default () => (
 )
 ~~~
 
-This is just a one way to create a Layout component. Here are some other methods of creating a Layout component:
+This is just one way to create a Layout component. Here are some other methods of creating a Layout component:
 
 ~~~js
 import withLayout from '../lib/layout'
