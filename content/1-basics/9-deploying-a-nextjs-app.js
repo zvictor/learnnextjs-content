@@ -219,7 +219,11 @@ git checkout .
 git checkout clean-urls-ssr
 ~~~
 
-In that, we use a custom server to run our app.
+In that, we use a custom server to run our app, so add Express into your app:
+
+~~~bash
+npm install --save express
+~~~
 
 ### Build the app
 
