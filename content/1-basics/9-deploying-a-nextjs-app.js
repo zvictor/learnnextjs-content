@@ -135,11 +135,11 @@ As you can see, you need to build your app once. Then you can start it on as man
       points: 30,
       answers: [
         '8000',
-        '80 (or without a port mentioned)',
+        '443 (or without a port mentioned)',
         'Any port you mentioned in the URL',
-        'It will throw an error saying, "You can only start your app on port 80"'
+        'It will throw an error saying, "You can only start your app on port 443"'
       ],
-      correctAnswer: '80 (or without a port mentioned)',
+      correctAnswer: '443 (or without a port mentioned)',
       text: `
 ## Deploying to ▲ZEIT now
 
@@ -177,9 +177,9 @@ So, in which port could we access our app when deployed to ZEIT now?
       text: `
 ## ZEIT will always use 80
 
-Actually, even if you start your app on port 8000, once deployed to now, you can access it with port 80 (or without a port).
+Actually, even if you start your app on port 8000, once deployed to now, you can access it with port 443 (the default port for "https" websites).
 
-That's a feature of ▲ZEIT now. You only need to start your app on any port you like. ▲ZEIT now will map it to port 80 always.
+That's a feature of ▲ZEIT now. You only need to start your app on any port you like. ▲ZEIT now will map it to port 443 always.
       `
     },
 
