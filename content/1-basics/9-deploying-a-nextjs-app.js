@@ -171,11 +171,11 @@ So, in which port could we access our app when deployed to ZEIT now?
     },
 
     {
-      id: 'zeit-now-port-80',
+      id: 'zeit-now-port-443',
       type: 'text',
       points: 5,
       text: `
-## ZEIT will always use 80
+## ZEIT will always use 443
 
 Actually, even if you start your app on port 8000, once deployed to now, you can access it with port 443 (the default port for "https" websites).
 
