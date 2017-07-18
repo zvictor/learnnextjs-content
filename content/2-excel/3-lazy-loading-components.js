@@ -193,7 +193,7 @@ As you've seen, the \`react-highlight\` bundle loads even for the page http://lo
 ![](https://user-images.githubusercontent.com/50838/28258429-ca7e452a-6aee-11e7-8b4f-7168a237f676.png)
 
 It loaded \`react-highlight\` because we asked it to load each and every time.
-You can see that by looking at \`lib/with-load.js\`. Here's the related code block:
+You can see that by looking at \`lib/with-post.js\`. Here's the related code block:
 
 ~~~js
 export default function WithPost (options) {
