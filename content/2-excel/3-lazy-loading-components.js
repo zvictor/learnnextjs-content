@@ -59,7 +59,7 @@ npm install
 npm run dev
 ~~~
 
-Now visit <http://locahost:3000> and try out the app.
+Now visit <http://localhost:3000> and try out the app.
       `
     },
 
