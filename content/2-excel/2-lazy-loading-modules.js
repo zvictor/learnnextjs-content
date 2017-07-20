@@ -70,7 +70,7 @@ npm run analyze
 
 Then, it will start a [webpack bundle analyzer](https://github.com/th0r/webpack-bundle-analyzer) and you will be able to inspect what is inside each of the JavaScript bundle.
 
-So, the \`firebase\` bundle may contain:
+So, the \`firebase\` bundle is:
       `
     },
 
