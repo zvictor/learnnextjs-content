@@ -1,7 +1,7 @@
 module.exports = {
   name: "Styling Components",
   intro: `
-Until now, styling components were largely an afterthought. But your app deserves some style.
+Until now, styling components was largely an afterthought. But your app deserves some style.
 
 For a React app, there are many different techniques that we can use to style it, and those can be categorized into two broad methods:
 
