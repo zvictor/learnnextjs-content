@@ -188,7 +188,7 @@ Select the correct statement regarding \`react-highlight\` bundle based on what 
       text: `
 ## It Always Loads
 
-As you've seen, the \`react-highlight\` bundle loads even for the page http://localhost:3000/p/hello-nextjs which doesn't have any code samples.
+As you've seen, the \`react-highlight\` bundle loads even for the page http://localhost:3000/p/learn-nextjs which doesn't have any code samples.
 
 ![](https://user-images.githubusercontent.com/50838/28258429-ca7e452a-6aee-11e7-8b4f-7168a237f676.png)
 
