@@ -10,7 +10,7 @@ This is a pretty decent default setup. But sometimes, we need much better contro
 * We also fetch data in the client side when needed (when switching pages).
 
 In this case, our main app bundle contains the [\`firebase\`](https://www.npmjs.com/package/firebase) module, simply because it is used in all of our pages. It is a pretty big module. (More than the size of react, react-dom and next.js all combined)
-
+f
 But when it comes to client side, we only need it when the user starts navigating into a different page. So, if we can load the \`firebase\` module at that time, we can improve the initial loading of our app.
 
 That is exactly what we are trying to do with this lesson.
@@ -70,7 +70,7 @@ npm run analyze
 
 Then, it will start a [webpack bundle analyzer](https://github.com/th0r/webpack-bundle-analyzer) and you will be able to inspect what is inside each of the JavaScript bundle.
 
-So, the \`firebase\` bundle is:
+So, the \`firebase\` module is contained:
       `
     },
 
