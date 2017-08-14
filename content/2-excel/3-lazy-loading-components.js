@@ -157,7 +157,7 @@ You can visit \`pages/p/hello-nextjs.js\` and see how we are using this HOC.
 
 Now we are trying to convert the above \`Highlight\` component into a **dynamic component**. Dynamic components are powered by the [dynamic imports](https://github.com/zeit/next.js#dynamic-import) in Next.js.
 
-Most importantly, these components will be loaded only when they are about to rendered in your app.
+Most importantly, these components will be loaded only when they are about to be rendered in your app.
 
 Creating a dynamic component is simple. You can use the [\`next/dynamic\`](https://github.com/zeit/next.js#dynamic-import) utility. Here's how you can convert \`Highlight\` into a dynamic component.
 
