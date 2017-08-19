@@ -88,7 +88,7 @@ npm run start
 ## Run two instances
 
 Now we are going to run two instances of our app. Usually, we do this to horizontally scale our app.
-First of all, do the following changes to our start npm script:
+First of all, make the following changes to our start npm script:
 
 ~~~json
 "scripts": {
