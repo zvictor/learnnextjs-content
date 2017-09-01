@@ -218,7 +218,7 @@ Post.getInitialProps = async function (context) {
 }
 ~~~
 
-In that, the first argument of the function in the **context** object. It has a query field that we can use to fetch information.
+In that, the first argument of the function is the **context** object. It has a query field that we can use to fetch information.
 
 In our example, we picked the show ID from query params and fetched its show data from the TVMaze API.
 
