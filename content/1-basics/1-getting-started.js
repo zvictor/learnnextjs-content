@@ -116,6 +116,8 @@ Now let's create our first page.
 Create a file named \`pages/index.js\` and add the following content:
 
 ~~~js
+import React from 'react'
+
 const Index = () => (
   <div>
     <p>Hello Next.js</p>
@@ -137,6 +139,8 @@ Now try to prompt a syntax error in your Index page. Here's an example:
 (We have simply removed the **&#x3C;/p&#x3E;** HTML tag)
 
 ~~~js
+import React from 'react'
+
 const Index = () => (
   <div>
     <p>Hello Next.js
